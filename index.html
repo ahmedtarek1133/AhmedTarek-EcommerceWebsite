@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Oswald:wght@200;500;600&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- header section design -->
+    <header>
+        <a href="#" class="logo"><img src="images/logo.PNG" alt="logo photo" width="60px" height="60px"></a>
+        
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="icons">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-user-line"></i></a>
+            <a href="cart.html" class="active">
+              <i class="ri-shopping-cart-line"></i>
+              <span id="cart-counter" class="cart-counter2">0</span>
+          </a>
+        </div>
+    </header>
+
+    <!-- slider design -->
+    
+    <div class="slider-container">
+      <div class="slides">
+          <div class="slide">
+              <img src="images/cover2558.jpg" alt="Slide 1"  height="400px">
+          </div>
+          <div class="slide">
+              <img src="images/cover11111111.jpg" alt="Slide 2"  height="400px">
+          </div>
+          <div class="slide">
+              <img src="images/cover21.jpg" alt="Slide 3"  height="400px">
+          </div>
+          <div class="slide">
+            <img src="images/cover111.jpg" alt="Slide 3"  height="400px">
+          </div>
+      </div>
+      <button class="prev-btn">&lt;</button>
+      <button class="next-btn">&gt;</button>
+    </div>
+
+      
+      
+
+      <!-- The Men's Shop -->
+      
+      <!-- Categories -->
+
+      <h4 class="categories">Featured Categories</h4>
+      <ul class="category-list">
+          <li><button class="category-btn" onclick="showProducts('some-products')">Some Products</button></li>
+          <li><button class="category-btn" onclick="showProducts('clothes')">Clothes</button></li>
+          <li><button class="category-btn" onclick="showProducts('shoes')">Shoes</button></li>
+          <li><button class="category-btn" onclick="showProducts('watches')">Watches</button></li>
+          <li><button class="category-btn" onclick="showProducts('glasses')">Glasses</button></li>
+      </ul>
+
+        
+  <!-- Some Products -->
+  <div id="some-products" class="products" >
+    <div class="product">
+        <img src="images/shirt-mockup-concept-with-plain-clothing_23-2149448745.jpg" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('T-Shirt', 19.99 ,'images/shirt-mockup-concept-with-plain-clothing_23-2149448745.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/clothes1111.jpg" alt="Jeans">
+        <h3>Jeans</h3>
+        <p>$24.99</p>
+        <button onclick="addToCart('Jeans', 24.99 ,'images/clothes1111.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/shoes11.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Shoes', 39.99,'images/shoes11.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/shoes 111.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$34.99</p>
+        <button onclick="addToCart('Shoes', 34.99,'images/shoes 111.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/watch11.jpg" alt="Watch">
+        <h3>Watch</h3>
+        <p>$59.99</p>
+        <button onclick="addToCart('Watch', 59.99,'images/watch11.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/watch-1869928_640.jpg" alt="Watch">
+        <h3>Watch</h3>
+        <p>$54.99</p>
+        <button onclick="addToCart('Watch', 54.99,'images/watch-1869928_640.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/glasses.jpg" alt="Glasses">
+      <h3>Glasses</h3>
+      <p>$29.99</p>
+      <button onclick="addToCart('Glasses', 29.99,'images/glasses.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/glasses11.jpg" alt="Glasses">
+      <h3>Glasses</h3>
+      <p>$24.99</p>
+      <button onclick="addToCart('Glasses', 24.99,'images/glasses11.jpg')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Clothes Products -->
+  <div id="clothes" class="products">
+      <!-- Products for Clothes category -->
+      <div class="product">
+          <img src="images/shirt11.jpg" alt="T-Shirt">
+          <h3>T-Shirt</h3>
+          <p>$29.99</p>
+          <button onclick="addToCart('T-Shirt', 29.99,'images/shirt11.jpg')">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="images/clothes22.jpg" alt="Jeans">
+          <h3>Jeans</h3>
+          <p>$19.99</p>
+          <button onclick="addToCart('Jeans', 19.99,'images/clothes22.jpg')">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="images/clothes555.jpg" alt="Jeans">
+          <h3>Jeans</h3>
+          <p>$24.99</p>
+          <button onclick="addToCart('Jeans', 24.99,'images/clothes555.jpg')">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="images/shirt-mockup-concept-with-plain-clothing_23-2149448745.jpg" alt="T-Shirt">
+          <h3>T-Shirt</h3>
+          <p>$29.99</p>
+          <button onclick="addToCart('T-Shirt', 29.99,'images/shirt-mockup-concept-with-plain-clothing_23-2149448745.jpg')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="images/tshirt_884653-988.jpg" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('T-Shirt', 39.99,'images/tshirt_884653-988.jpg')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Shoes Products -->
+  <div id="shoes" class="products">
+    <div class="product">
+        <img src="images/shoes 111.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Shoes', 19.99,'images/shoes 111.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/shoes.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart('Shoes', 29.99,'images/shoes.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/shoes11.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Shoes', 39.99,'images/shoes11.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/shoes33.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Shoes', 49.99,'images/shoes33.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/shoes_1203-7555.jpg" alt="Shoes">
+      <h3>Shoes</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Shoes', 49.99,'images/shoes_1203-7555.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/shoes11.jpg" alt="Shoes">
+      <h3>Shoes</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Shoes', 49.99,'images/shoes11.jpg')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Watches Products -->
+  <div id="watches" class="products">
+    <div class="product">
+        <img src="images/watch stand_921860-21237.jpg" alt="Watches">
+        <h3>Watches</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Watches', 19.99,'images/watch stand_921860-21237.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/watch-1869928_640.jpg" alt="Watches">
+        <h3>Watches</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart('Watches', 29.99,'images/watch-1869928_640.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/watch-2159351_640.jpg" alt="Watches">
+        <h3>Watches</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Watches', 39.99,'images/watch-2159351_640.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/watch-407096_640.jpg" alt="Watches">
+        <h3>Watches</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Watches', 49.99,'images/watch-407096_640.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/watch.jpg" alt="Watches">
+      <h3>Watches</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Watches', 49.99,'images/watch.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/watch11.jpg" alt="Watches">
+      <h3>Watches</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Watches', 49.99,'images/watch11.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/watch_776695-368.jpg" alt="Watches">
+      <h3>Watches</h3>
+      <p>$49.99</p>
+      <button onclick="addToCart('Watches', 49.99,'images/watch_776695-368.jpg')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Glasses Products -->
+  <div id="glasses" class="products">
+    <div class="product">
+        <img src="images/glasses-.avif" alt="Glasses">
+        <h3>Glasses</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Glasses', 19.99,'images/glasses-.avif')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/glasses-with-slightly-rounded-frame_23-2150670767.avif" alt="Glasses">
+        <h3>Glasses</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart('Glasses', 29.99,'images/glasses-with-slightly-rounded-frame_23-2150670767.avif')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/glasses.jpg" alt="Glasses">
+        <h3>Glasses</h3>
+        <p>$39.99</p>
+        <button onclick="addToCart('Glasses', 39.99,'images/glasses.jpg')">Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="images/glasses11.jpg" alt="Glasses">
+        <h3>Glasses</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart('Glasses', 49.99,'images/glasses11.jpg')">Add to Cart</button>
+    </div>
+  </div>
+
+      <!-- //============================================================ -->
+
+
+
+      <!-- //============================================================ -->
+
+      
+
+
+      <footer>
+          <div class="footer-container">
+              <div class="footer-content">
+                  <h3>Contact Us</h3>
+                  <p>Email:ahmedtarek1351@gmail.com</p>
+                  <p>Phone:+201122438815</p>
+                  <p>Address:19.Oraby-Street-Sharkia </p>
+              </div>
+              <div class="footer-content">
+                  <h3>Quick Links</h3>
+                  <ul class="list">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="footer-content">
+                  <h3>Follow Us</h3>
+                  <ul class="social-icons">
+                      <li><a href=""><i class="ri-facebook-circle-fill"></i></a></li>
+                      <li><a href=""><i class="ri-twitter-fill"></i></a></li>
+                      <li><a href=""><i class="ri-instagram-fill"></i></a></li>
+                      <li><a href=""><i class="ri-linkedin-box-fill"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="bottom-bar">
+              <p>&copy; 2024 E Commerce. All Rights Reserved</p>
+          </div>
+      </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
